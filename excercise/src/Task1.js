@@ -6,7 +6,8 @@
 //   without losing the rest of the existing data.
 //
 // Solution:
-//   Explain your solution here.
+//   the issue here was the onChnage handler being used for each field and than chnaging the specific feild.
+// So using the spread operator will chnage only the certain feild that you are editing and keep the existing values too.
 
 import React, { useState } from "react";
 
@@ -19,22 +20,22 @@ export default function Task1() {
 
   function handleFirstNameChange(e) {
     setPerson({
-      ...person, // Spread the existing state
-      firstName: e.target.value, // Update only the firstName field
+      ...person, 
+      firstName: e.target.value, 
     });
   }
 
   function handleLastNameChange(e) {
     setPerson({
-      ...person, // Spread the existing state
-      lastName: e.target.value, // Update only the lastName field
+      ...person, 
+      lastName: e.target.value, 
     });
   }
 
   function handleEmailChange(e) {
     setPerson({
-      ...person, // Spread the existing state
-      email: e.target.value, // Update only the email field
+      ...person, 
+      email: e.target.value, 
     });
   }
 

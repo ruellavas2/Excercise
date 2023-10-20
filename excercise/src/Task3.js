@@ -8,7 +8,9 @@
 //   The goal of this task is to print out the string ONLY when the list of items is being updated.
 //
 // Solution:
-//   Explain your solution here.
+//   the issue was that the console.log was above the useEffect function in the List component. 
+//this ensures that the log message is being printed only when the items state is upated
+//as useEffect runs when [getItems] chnages
 
 import React, { useState, useEffect } from "react";
 
