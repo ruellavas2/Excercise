@@ -53,7 +53,7 @@ function List({ getItems }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    console.log("Updating items");
+    console.log("Updating items"); //moved console.log
     setItems(getItems());
   }, [getItems]);
 

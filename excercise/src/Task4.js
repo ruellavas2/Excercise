@@ -8,7 +8,7 @@
 import React from "react";
 import useLocalStorage from "./useLocalStorage";
 
-function Task4() {
+function Greeting() {
   const [animal, setAnimal] = useLocalStorage("animal", "");
 
   function handleAnimalName(event) {
@@ -31,5 +31,5 @@ function Task4() {
 }
 
 export default function App() {
-  return <Task4 />;
+  return <Greeting />;
 }

@@ -18,6 +18,6 @@ export default function App() {
 }
 
 function LightSwitch({ onSwitchLight }) {
-  return <button onClick={onSwitchLight}>Switch on the light</button>;
+  return <button onClick={onSwitchLight}>Switch on the light</button>; // removed the two closed brackets
 }
 

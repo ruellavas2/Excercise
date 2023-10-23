@@ -20,7 +20,7 @@ export default function Task1() {
 
   function handleFirstNameChange(e) {
     setPerson({
-      ...person, 
+      ...person,  //spread operator allows an iterable such as an array here to be expanded in places where 0 or argumnts are expcted
       firstName: e.target.value, 
     });
   }
